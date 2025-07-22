@@ -1,0 +1,208 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.background-overlay {
+  background-image: url(foto/jomblang.jpg);
+  background-size: 100% 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100%;
+  backdrop-filter: brightness(0.6);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+nav a.active {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Konten utama */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+}
+
+main h1 span {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+main p {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px black;
+}
+
+
+main. {
+  text-align: justify;
+  padding: 60px 20px;
+}
+
+.foto-container {
+  margin: 0 auto;
+  max-width: 300px;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.foto-container img {
+  width: 100%;
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.galeri-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galeri-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 200px; /* tinggi tetap agar simetris */
+  object-fit: cover; /* menjaga aspek rasio proporsional dan rapi */
+  display: block;
+  border: 4px solid white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeri-item img:hover {
+  transform: scale(1.05);
+}
+table.info-tabel {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+table.info-tabel th,
+table.info-tabel td {
+  padding: 12px 16px;
+  border: 1px solid white;
+}
+
+table.info-tabel th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+table.info-tabel tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.kontak-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.kontak-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.kontak-form button {
+  padding: 10px;
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.kontak-form button:hover {
+  background-color: #e6c200;
+}
